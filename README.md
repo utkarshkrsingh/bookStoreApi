@@ -3,10 +3,10 @@
 This is a simple Book Store API built in Go using GORM to interact with a MySQL database through Object-Relational Mapping (ORM) and maintains authentication using JWT.
 
 #### 🛠️ Tech Stack
+- github.com/gin-gonic/gin - Web framework
 - gorm.io/gorm - ORM for Go
 - gorm.io/driver/mysql - MySQL driver for GORM
 - github.com/golang-jwt/jwt/v5 - JWT Authentication
-- net/http - for building the http server
 - Standard Go libraries
 
 > Note: Singnup feature for book manager is not yet implemented. It is planned for a future update.
