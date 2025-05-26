@@ -33,6 +33,6 @@ DSN="<username>:<password>@tcp(127.0.0.1:3306)/<dbname>?charset=UTF8mb4&parseTim
 ```
 
 #### 📌 To-Do / Future Improvements
-- [ ] Add Swagger/OpenAPI docs
+- [ ] Project docs
 - [ ] Dockerize the application
 - [ ] Write unit tests
