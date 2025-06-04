@@ -34,11 +34,9 @@ func main() {
 	router.POST("/login", controller.Login)
 	router.GET("/validate", middleware.RequireAuth, controller.Validate)
 	router.GET("/books", controller.GetBooks)
-	router.GET("/bookname", controller.GetByName)
-	router.GET("/bookbyisbn", controller.GetBookByISBN)
-	router.POST("/createbook", middleware.RequireAuth, controller.InsertBook)
-	router.PATCH("/updatebook", middleware.RequireAuth, controller.Update)
-	router.DELETE("/deletebook/:isbn", middleware.RequireAuth, controller.Delete)
+	router.POST("/books", middleware.RequireAuth, controller.InsertBook)
+	router.PATCH("/books/:isbn", middleware.RequireAuth, controller.Update)
+	router.DELETE("/books/:isbn", middleware.RequireAuth, controller.Delete)
 
 	router.Run(fmt.Sprintf(":%s", os.Getenv("PORT")))
 }
